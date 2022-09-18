@@ -1,0 +1,153 @@
+/* 
+    Title: styles.css
+    Author: Carl Logan
+    Date: 9/10/2022
+    Description: Typical styles for the portfolio.
+*/
+
+/* establish global variables for the site */
+:root {
+  --primary-color: #1F285E;
+  --secondary-color: #495DDE;
+  --tertiary-color: #ebeeff;
+}
+
+/* set the main font for the site */
+body {
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+/* set the main nav container width */
+#nav-container {
+  width: 97%;
+}
+
+/* set the font for the main nav elements */
+#nav-container ul {
+  list-style-type: none;
+  font-family: 'Fraunces', serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 5em;
+  margin: 0;
+}
+
+/* styling for the list items */
+#nav-container ul li {
+  text-decoration: none;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+/* overrides for the anchor links */
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* increase clickable area for nav links */
+#nav-container ul li a {
+  display: block;
+  width: 100%;
+}
+
+#nav-container ul li:hover {
+  background-color: var(--tertiary-color);
+}
+
+/* set some different styles for screens 480px and below */
+@media screen and (max-width: 480px) {
+
+  /* set the main nav container width */
+  #nav-container {
+    width: 90%;
+  }
+
+  /* set the font for the main nav elements */
+  #nav-container ul {
+    font-size: 1.5em;
+  }
+}
+
+/* 
+ * set some different styles for screens between
+ * 481px and 1080px
+ */
+@media screen and (min-width: 481px)  and (max-width: 1080px) {
+  /* set the font for the main nav elements */
+  #nav-container ul {
+    font-size: 2.5em;
+  }
+
+  /* set the main nav container width */
+  #nav-container {
+    width: 95%;
+  }
+}
+
+.main {
+  padding: 20px 20px 0px 20px;
+  color: var(--primary-color);
+  font-size: 3.5em;
+  font-family: 'Fraunces', serif;
+  text-align: center;
+}
+
+#grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.page-heading {
+  margin: 10px 0 0 0;
+  color: var(--primary-color);
+  font-size: 4em;
+  font-family: 'Fraunces', serif;
+  text-align: center;
+  font-style: italic;
+}
+
+#cl-img1 {
+  width: 50%;
+  margin-left: 25%;  
+}
+
+#resume {
+  width: 75%;
+  margin-left: 12.5%;
+  border: 2px solid var(--secondary-color);
+  display: grid;
+  grid-template-columns: 70% 30%;
+  color: var(--primary-color);
+  margin-top: 4em;
+}
+
+#resume-section-one {
+  padding-left: 10%;
+}
+
+#resume-section-one h2 {
+  font-size: 2.5em;
+  margin-bottom: 0;
+}
+
+#resume-section-one p b {
+  font-size: 1.2em;
+}
+
+#resume-section-two #cad {
+  padding-top: 100px;
+}
+
+#resume span {
+  font-size: .7em;
+}
+
+.projects {
+  width: 275px;
+}
+
+#download {
+  text-align: center;
+  font-family: 'Fraunces', serif;
+}
