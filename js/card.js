@@ -10,13 +10,13 @@
 class CardComponent extends HTMLElement {
   constructor() {
     super();
-    this.anchor_src = "";
+    this.anchor_href = "";
     this.img_src = "";
     this.brief = "";
   }
 
   static get observedAttributes() {
-    return ['anchor_src', 'img_src', 'title', 'brief'];
+    return ['anchor_href', 'img_src', 'title', 'brief'];
   }
 
   attributeChangedCallback(property, oldValue, newValue) {
@@ -30,8 +30,7 @@ class CardComponent extends HTMLElement {
       .card {
         width: 400px;
         height: 400px;
-        border-bottom: 3px solid var(--secondary-color);
-        //border-right: 2px solid var(--secondary-color);
+        border-top: 3px solid var(--secondary-color);
         text-align: center;
         font-size: .8em;
         color: var(--primary-color);
@@ -44,18 +43,20 @@ class CardComponent extends HTMLElement {
       }
 
       .card h2, .card p {
-        margin: 5px 0 0 0;
+        margin: 15px 0 10px 0;
       }
 
       .card:hover {
-        border-bottom: 3px solid var(--tertiary-color);
+        border-top: 3px solid var(--tertiary-color);
       }
     </style>
     
-    <div src="${this.anchor_src}" class="card">
-      <h2>${this.title}Title</h2>
-      <img src="${this.img_src}" alt=""></img>
-      <p>${this.brief}Words to describe</p>
+    <div class="card">
+      <a href="${this.anchor_href}" >
+        <h2>${this.title}</h2>
+        <img src="${this.img_src}" alt=""></img>
+        <p>${this.brief}</p>
+      </a>
     </div>
     `; 
   }

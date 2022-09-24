@@ -27,14 +27,14 @@ class FooterComponent extends HTMLElement {
         }
 
         footer div p {
-          padding: 5px 25px;
+          padding: 0 25px;
           font-size: 1em;
           width: 70%;
           font-weight: 700;
         }
 
         footer div p a:hover {
-          color: var(--secondary-color);
+          background-color: var(--tertiary-color);
         }
 
         footer .links {
@@ -89,15 +89,15 @@ class FooterComponent extends HTMLElement {
 
       <footer>
         <div class="links">
-          <p><a href="https://github.com/carlloganjr/portfolio">Github</a></p>
-          <p><a href="https://www.bellevue.edu/degrees/bachelor/web-development-bs/">
+            <p><a style="border: 1px solid var(--secondary-color); padding: 5px;" href="https://github.com/carlloganjr/portfolio">Github</a></p>
+          <p><a style="border: 1px solid var(--secondary-color); padding: 5px;" class="footer-links" href="https://www.bellevue.edu/degrees/bachelor/web-development-bs/">
           Bellevue Web Dev Degree</a></p>
-          <p><a href="https://www.youtube.com/c/bellevueuniversity">
+          <p><a style="border: 1px solid var(--secondary-color); padding: 5px;" class="footer-links" href="https://www.youtube.com/c/bellevueuniversity">
           Bellevue Youtube</a></p>
-          <p><a href="https://github.com/buwebdev">Bellevue Github</a></p>
+          <p><a style="border: 1px solid var(--secondary-color); padding: 5px;" class="footer-links" href="https://github.com/buwebdev">Bellevue Github</a></p>
         </div>
         <div class="back-to-top">
-          <p><a href="#header">Back to Top</a></p>
+          <p><a style="border: 1px solid var(--secondary-color); padding: 5px;" href="#header">Back to Top</a></p>
         </div>
       </footer>
     `;
