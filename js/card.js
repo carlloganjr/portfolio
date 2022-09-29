@@ -53,6 +53,35 @@ class CardComponent extends HTMLElement {
       .card:hover {
         border-top: 3px solid var(--tertiary-color);
       }
+
+      @media screen and (min-width: 481px) and (max-width: 770px) {
+        .card {
+          width: 475px;
+          height: 475px;
+        }
+      }
+
+      @media screen and (min-width: 771px) and (max-width: 880px) {
+        .card {
+          width: 300px;
+          height: 300px;
+        }
+      }
+
+      @media screen and (min-width: 881px) and (max-width: 1080px) {
+        .card {
+          width: 400px;
+          height: 400px;
+        }
+      }
+
+      @media screen and (min-width: 1081px) and (max-width: 1280px) {
+        .card {
+          width: 500px;
+          height: 500px;
+          margin: 10% 0;
+        }
+      }
     </style>
     
     <div class="card">
