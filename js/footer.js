@@ -46,6 +46,10 @@ class FooterComponent extends HTMLElement {
           text-align: right;
         }
 
+        #back-to-top-arrow {
+          rotate: -135deg;
+        }
+
         @media screen and (max-width: 480px) {
           footer {
             height: 3em;
@@ -89,12 +93,12 @@ class FooterComponent extends HTMLElement {
 
       <footer>
         <div class="links">
-            <p><a style="border: 1px solid var(--secondary-color); padding: 5px;" href="https://github.com/carlloganjr/portfolio">Github</a></p>
-          <p><a style="border: 1px solid var(--secondary-color); padding: 5px;" class="footer-links" href="https://www.bellevue.edu/degrees/bachelor/web-development-bs/">
+            <p><a style="border: 1px solid var(--secondary-color); padding: 5px;" href="https://github.com/carlloganjr/portfolio" target="_blank">Github</a></p>
+          <p><a style="border: 1px solid var(--secondary-color); padding: 5px;" class="footer-links" href="https://www.bellevue.edu/degrees/bachelor/web-development-bs/" target="_blank">
           Bellevue Web Dev Degree</a></p>
-          <p><a style="border: 1px solid var(--secondary-color); padding: 5px;" class="footer-links" href="https://www.youtube.com/c/bellevueuniversity">
+          <p><a style="border: 1px solid var(--secondary-color); padding: 5px;" class="footer-links" href="https://www.youtube.com/c/bellevueuniversity" target="_blank">
           Bellevue Youtube</a></p>
-          <p><a style="border: 1px solid var(--secondary-color); padding: 5px;" class="footer-links" href="https://github.com/buwebdev">Bellevue Github</a></p>
+          <p><a style="border: 1px solid var(--secondary-color); padding: 5px;" class="footer-links" href="https://github.com/buwebdev" target="_blank">Bellevue Github</a></p>
         </div>
         <div class="back-to-top">
           <p><a style="border: 1px solid var(--secondary-color); padding: 5px;" href="#header">Back to Top</a></p>

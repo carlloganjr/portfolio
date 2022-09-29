@@ -7,6 +7,7 @@
 ================================================================
 */
 
+// CardComponent will be used to create a link to projects
 class CardComponent extends HTMLElement {
   constructor() {
     super();
@@ -15,15 +16,18 @@ class CardComponent extends HTMLElement {
     this.brief = "";
   }
 
+  // return the attributes that can be modified
   static get observedAttributes() {
     return ['anchor_href', 'img_src', 'title', 'brief'];
   }
 
+  // check the attributes for changes
   attributeChangedCallback(property, oldValue, newValue) {
     if (oldValue === newValue) return;
     this[ property ] = newValue;
   }
 
+  // setup the typical card element
   connectedCallback() {
     this.innerHTML = `
     <style>
@@ -62,4 +66,5 @@ class CardComponent extends HTMLElement {
   }
 }
 
+// define the custom element for use in the html
 customElements.define('card-component', CardComponent);

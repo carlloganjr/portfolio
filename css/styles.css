@@ -12,6 +12,10 @@
   --tertiary-color: #ebeeff;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* set the main font for the site */
 body {
   font-family: 'Libre Franklin', sans-serif;
@@ -49,10 +53,15 @@ a {
 #nav-container ul li a {
   display: block;
   width: 100%;
+  transition: transform 1s ease-in-out;
 }
 
 #nav-container ul li:hover {
   background-color: var(--tertiary-color);
+}
+
+#nav-container ul li a:hover {
+  transform: translateX(30px);
 }
 
 /* set some different styles for screens 480px and below */
@@ -107,9 +116,8 @@ a {
   font-style: italic;
 }
 
-#cl-img1 {
-  width: 50%;
-  margin-left: 25%;  
+#cl-img1, #cl-img2 {
+  width: 50%; 
 }
 
 #resume {
@@ -120,6 +128,7 @@ a {
   grid-template-columns: 70% 30%;
   color: var(--primary-color);
   margin-top: 4em;
+  margin-bottom: 75px;
 }
 
 #resume-section-one {
@@ -150,4 +159,12 @@ a {
 #download {
   text-align: center;
   font-family: 'Fraunces', serif;
+}
+
+#down-link {
+  width: 100px;
+  margin: 20px auto;
+  font-size: 1.5em;
+  transform: rotate(45deg);
+  font-weight: bold;
 }

@@ -7,3 +7,10 @@
 ================================================================
 */
 
+const mainContent = document.getElementById('main-content');
+const arrow = document.getElementById('down-arrow');
+
+// when the arrow is clicked, the window will scroll to the main-content
+arrow.addEventListener('click', () => {
+    mainContent.scrollIntoView({behavior: 'smooth'});
+});
