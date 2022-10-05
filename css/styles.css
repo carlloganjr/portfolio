@@ -139,6 +139,20 @@ a {
   font-weight: bold;
 }
 
+.bucket {
+  font-size: 2em;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.bucket p {
+  margin: 0;
+}
+
+.about {
+  font-size: 2.5em;
+}
+
 /* set some different styles for screens 480px and below */
 @media screen and (max-width: 480px) {
 

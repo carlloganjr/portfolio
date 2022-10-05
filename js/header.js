@@ -25,16 +25,12 @@ class HeaderComponent extends HTMLElement {
           border-bottom: 2px solid var(--secondary-color);
         }
 
-        header .cl, header .bl {
+        header .cl {
           font-size: 1.5em;
-          float: left;
           color: var(--primary-color);
           padding: 15px;
           margin: 0px;
-        }
-
-        header .bl {
-          float: right;
+          text-align: center;
         }
 
         header a:hover {
@@ -54,7 +50,6 @@ class HeaderComponent extends HTMLElement {
 
       <header id="header">
         <h2 class="cl"><a href="./index.html">Carl Logan</a></h2>
-        <h2 class="bl"><a href="./bucket-list.html">Bucket List</a></h2>
       </header>
     `;
   }

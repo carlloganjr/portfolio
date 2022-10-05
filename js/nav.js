@@ -57,7 +57,8 @@ class NavComponent extends HTMLElement {
         <a href="database.html">DATABASE DIAGRAMS</a>  
         <a href="api.html">API UNIT TESTS</a>  
         <a href="./about.html">ABOUT</a>  
-        <a href="./resume.html">RESUME</a>      
+        <a href="./resume.html">RESUME</a>  
+        <a href="./bucket-list.html">BUCKET LIST</a>    
       </nav>
     `;
   }
