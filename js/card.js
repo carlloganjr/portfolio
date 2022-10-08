@@ -85,7 +85,7 @@ class CardComponent extends HTMLElement {
     </style>
     
     <div class="card">
-      <a href="${this.anchor_href}" >
+      <a href="${this.anchor_href}" target="_blank">
         <h2>${this.title}</h2>
         <img src="${this.img_src}" alt=""></img>
         <p>${this.brief}</p>
