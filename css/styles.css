@@ -199,3 +199,8 @@ a {
     grid-template-columns: auto;
   }
 }
+
+.devops {
+  padding: 25px 0;
+  text-align: center;
+}

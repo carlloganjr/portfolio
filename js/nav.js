@@ -52,13 +52,14 @@ class NavComponent extends HTMLElement {
       </style>
 
       <nav class="nav-change">
-        <a href="./index.html">HOME</a>  
-        <a href="./projects.html">PROJECTS</a>    
+        <a href="index.html">HOME</a>  
+        <a href="projects.html">PROJECTS</a>    
         <a href="database.html">DATABASE DIAGRAMS</a>  
-        <a href="api.html">API UNIT TESTS</a>  
-        <a href="./about.html">ABOUT</a>  
-        <a href="./resume.html">RESUME</a>  
-        <a href="./bucket-list.html">BUCKET LIST</a>    
+        <a href="api.html">API UNIT TESTS</a>
+        <a href="devops.html">DEVOPS</a>  
+        <a href="about.html">ABOUT</a>  
+        <a href="resume.html">RESUME</a>  
+        <a href="bucket-list.html">BUCKET LIST</a>    
       </nav>
     `;
   }
